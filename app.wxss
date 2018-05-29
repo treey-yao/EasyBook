@@ -1,0 +1,60 @@
+/**app.wxss**/
+
+.pagn {
+    font-size: 24px;
+}
+
+
+
+/* 书本 -列表*/
+
+.book-wrap {
+    margin: 0 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EFEFF4;
+}
+
+.book-wrap-tlite {
+    text-align: left;
+    font-size: .8rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    font-family: "SimSun";
+    display: block;
+}
+
+.book-group {
+    margin: 0;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* 书本  */
+
+.book-item {
+    width: 22%;
+    margin-bottom: .5rem;
+}
+
+.book-item-img {
+    width: 100%;
+}
+
+.book-item-name {
+    display: block;
+    text-align: left;
+    font-size: .7rem;
+    color: #333;
+}
+
+.book-item-author {
+    display: block;
+    text-align: left;
+    font-size: .6rem;
+    color: #999;
+}

@@ -1,0 +1,56 @@
+<!-- index.wxml -->
+<view class="">
+  <!-- 搜索 -->
+<view class="search-wrap">
+  <input class="search-box" type="text" placeholder="小说名字" confirm-type="search" bindinput="searchText" bindtap="searchBtn"></input>
+</view>
+
+  <!-- 轮播图 -->
+  <view class="banner-box">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{ indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{slides}}" wx:key="">
+        <swiper-item class="banner-item">
+          <image src="{{item.image}}" class="slide-image" mode="widthFix" data-id="{{item.goodsId }}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 新品推荐 -->
+  <view class="new-book-wrap">
+    <block wx:for="{{newBook }}" wx:key="">
+      <view class="book-item" id="{{item.bookId}}">
+      <image src="{{ item.bookImage}}" mode="widthFix" class="book-item-img"></image>
+      <text class="book-item-name">{{ item.name}}</text>
+      <text class="book-item-author">{{ item.author}}</text>
+    </view>
+    </block >
+  </view>
+  <!-- 完本小说 -->
+  <view class="book-wrap">
+    <text class="book-wrap-tlite">完本小说</text>
+    <view class="book-group">
+    <block wx:for="{{endBook }}" wx:key="">
+        <view class="book-item" id="{{item.bookId}}">
+        <image src="{{ item.bookImage}}" mode="widthFix" class="book-item-img"></image>
+        <text class="book-item-name">{{ item.name}}</text>
+        <text class="book-item-author">{{ item.author}}</text>
+      </view>
+    </block >
+    </view>
+  </view>
+
+
+<view class="search-panel-wrap " wx:if="{{searchPanel}}">
+<view class="history-box">
+  <text class="history-title">搜索历史</text>
+  <image src="{{deleteIco}}" class="dete-btn" mode="widthFix"></image>
+</view>
+
+<view class="history-text-wrap">
+  <text class=" history-item">完本</text>
+  <text class=" history-item">完本</text>
+  <text class=" history-item">完本</text>
+</view>
+
+</view>
+</view>

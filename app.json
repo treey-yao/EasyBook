@@ -1,0 +1,31 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/shelf/shelf",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "EasyBook",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "borderStyle": "#E7E7EB",
+        "backgroundColor": "#fefefe",
+        "color": "#8A8A8A",
+        "selectedColor": "#d4237a",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "推荐",
+            "iconPath": "assets/images/ico_index.png",
+            "selectedIconPath": "assets/images/ico_index_d.png"
+        }, {
+            "pagePath": "pages/shelf/shelf",
+            "text": "书架",
+            "iconPath": "assets/images/ico_shelf.png",
+            "selectedIconPath": "assets/images/ico_shelf_d.png"
+        }]
+    }
+
+}

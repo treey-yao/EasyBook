@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/index/index",
         "pages/shelf/shelf",
+        "pages/index/index",
         "pages/logs/logs"
     ],
     "window": {

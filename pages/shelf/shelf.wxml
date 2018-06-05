@@ -1,13 +1,74 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- index.wxml -->
+<view class="">
+  <!-- 头像 -->
+  <view class="head-wrap">
+    <view class="head-img-box">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="head-name-box">
+      <open-data type="userNickName" lang="zh_CN"></open-data>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 阅读记录 -->
+
+  <view class="read-wrap">
+    <view class="read-title-box">
+      <text>阅读记录</text>
+    </view>
+
+  <view class="read-list-group">
+
+    <view class="read-book-item">
+      <image class="book-cover" src="https://qidian.qpic.cn/qdbimg/349573/1009704712/150" mode="widthFix"></image>
+      <view class="book-info-wrap">
+        <text class="book-name"> 牧神记</text>
+        <text class="book-chapter"> 读至 第三章 呵呵顶顶</text>
+      </view>
+
+      <view class="book-btn-wrap">
+        <text class="book-btn " bindtap=" ">···</text>
+        <!-- <view>
+          <text>删除</text>
+        </view> -->
+      </view>
+    </view>
+
+    <view class="read-book-item">
+      <image class="book-cover" src="https://qidian.qpic.cn/qdbimg/349573/1009704712/150" mode="widthFix"></image>
+      <view class="book-info-wrap">
+        <text class="book-name"> 牧神记</text>
+        <text class="book-chapter"> 读至 第三章 呵呵顶顶</text>
+      </view>
+
+      <view class="book-btn-wrap">
+        <text class="book-btn ">···</text>
+        <!-- <view>
+          <text>删除</text>
+        </view> -->
+      </view>
+    </view>
+
+    <view class="read-book-item">
+      <image class="book-cover" src="https://qidian.qpic.cn/qdbimg/349573/1009704712/150" mode="widthFix"></image>
+      <view class="book-info-wrap">
+        <text class="book-name"> 牧神记</text>
+        <text class="book-chapter"> 读至 第三章 呵呵顶顶</text>
+      </view>
+
+      <view class="book-btn-wrap">
+        <text class="book-btn ">···</text>
+        <!-- <view>
+          <text>删除</text>
+        </view> -->
+      </view>
+    </view>
+
+      
+
+  </view>
+
+
+
+
   </view>
 </view>

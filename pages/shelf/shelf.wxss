@@ -48,14 +48,31 @@
     display: block;
 }
 
+.read-book-item::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .read-book-item {
+    display: block;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.cell-item-view {
     display: -webkit-flex;
     display: flex;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: .5rem .5rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0 0 0 .5rem;
 }
 
 .book-cover {
@@ -86,14 +103,17 @@
 
 .book-btn-wrap {
     width: 1.5rem;
-    position: relative;
+    float: right;
+    height: 4rem;
+    background: #d4237a;
+    color: #fff;
+    width: 4rem;
 }
 
-.book-btn {
-    height: 100%;
-    line-height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d4237a;
+.book-btn-item {
+    display: block;
+    text-align: center;
+    font-size: .7rem;
+    height: 4rem;
+    line-height: 4rem;
 }

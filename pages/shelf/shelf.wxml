@@ -16,16 +16,18 @@
     </view>
     <view class="read-list-group">
       <block wx:for="{{messageList}}" wx:key="">
-        <view class="read-book-item" bindtap="bindCellTapHandler"  data-value="{{item}}" data-index="{{index}}">
-          <view class="cell-item-view" data-index="{{index}}" bindtouchstart="cellTouchStart"    style="left:{{item.cellMoveLeftDistance?item.cellMoveLeftDistance:0}}px">
+        <view class="read-book-item"  data-value="{{item}}" data-index="{{index}}">
+
+          <view class="cell-item-view " bindtap="bindCellTapHandler"   data-index="{{index}}" bindtouchstart="cellTouchStart" bindtouchmove="cellTouchMove" bindtouchend="cellTouchEnd" style="transform: translate( -{{item.cellMoveLeftDistance?item.cellMoveLeftDistance:0}}rem, 0)">
             <image class="book-cover" src="{{ item.pic}}" mode="widthFix"></image>
             <view class="book-info-wrap">
               <text class="book-name">牧神记</text>
               <text class="book-chapter">读至{{item.chapter }}</text>
             </view>
           </view>
+          
           <view class="book-btn-wrap">
-            <text class="book-btn-item ">删除</text>
+            <text class="book-btn-item" bindtap="deleteBtn" >删除</text>
           </view>
         </view>
       </block>

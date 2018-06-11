@@ -1,0 +1,27 @@
+<view>
+
+    <view>
+
+        <view>
+
+            <view>
+                 <image src="{{}} " ></image>
+            <text> 上一章<text>
+                 </view>
+
+             <view> <image src="{{}} " ></image>
+            <text> 上一张<text> </view>
+
+            <view> <image src="{{}} " ></image>
+            <text> 下一章<text> </view>
+
+        </view>
+
+
+
+
+
+    </view>
+
+
+</view>

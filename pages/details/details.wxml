@@ -1,0 +1,50 @@
+<view>
+    <!-- 书本信息 -->
+    <view class="book-info-box">
+        <image class="book-cover" src="https://qidian.qpic.cn/qdbimg/349573/1009704712/150" mode="widthFix"></image>
+        <view class="book-info-wrap">
+            <text class="book-name">牧神记</text>
+            <text class="book-author">宅猪</text>
+            <view class="book-type-group">
+                <text class="tag">玄幻</text>
+                <text class="tag">玄幻</text>
+                <text class="tag">玄幻</text>
+            </view>
+        </view>
+    </view>
+    <!-- 书本统计 -->
+    <view class="book-data-wrap">
+        <view class="book-data-item">
+            <text class=" book-number">2000.2</text>
+            <text class="book-unit">万字</text>
+            <view class="book-title">连载</view>
+        </view>
+        <view class="book-data-item">
+            <text class=" book-number">2000.2</text>
+            <text class="book-unit">万人</text>
+            <view class="book-title">都过</view>
+        </view>
+        <view class="book-data-item">
+            <text class=" book-number">2.2</text>
+            <text class="book-unit">分</text>
+            <view class="book-title">评分</view>
+        </view>
+    </view>
+    <!-- 书本介绍 -->
+    <view class="book-synopsis-wrap">
+        <text class="book-text">
+            “我消失。”路平连忙退下。摘风学院著名的林荫大道上，正看到苏唐气鼓鼓地迎面走来，路平扬手打了个招呼。
+    “你……”苏唐一愣，没明白路平怎么反倒出现在自己前方，但是目光转向小屋那边，看到莫森老师撅着屁股可怜兮兮趴在地上的模样，顿时明白过来。
+    狠狠地瞪了路平一眼，苏唐连忙走到莫森老师身旁。
+        </text>
+    </view>
+    <view class="foot-btn-box">
+        <view class="foot-btn-wrap">
+            <view class="foot-btn-item list-btn">
+                <image class="list-icon" src="{{listIcon }}" mode="widthFix"></image>
+                <text>加入列表</text>
+            </view>
+            <text class="foot-btn-item read-btn">马上阅读</text>
+        </view>
+    </view>
+</view>

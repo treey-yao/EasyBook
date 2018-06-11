@@ -1,0 +1,163 @@
+/* 书本信息 */
+
+.book-info-box {
+    background: #feeefe;
+    padding: .5rem 1rem;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.book-cover {
+    width: 4rem;
+    margin-right: .5rem;
+}
+
+.book-info-wrap {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.book-name {
+    display: block;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: .3rem;
+}
+
+.book-author {
+    display: block;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: .3rem;
+}
+
+.book-type-group {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.book-type-group .tag {
+    font: .6rem/1rem PingFangSC-Regular, '-apple-system', Simsun;
+    display: inline-block;
+    overflow: hidden;
+    height: 1rem;
+    margin-right: .5rem;
+    padding: 0 .5rem;
+    text-align: center;
+    vertical-align: middle;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+    color: #3f5a93;
+    border-color: #9fadc9;
+}
+
+
+/* 书本统计 */
+
+.book-data-wrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 .5rem;
+    padding: .7rem 0;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.book-data-item {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #E8E8E8;
+}
+
+.book-data-item:last-child {
+    border-right: none;
+}
+
+.book-number {
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 0 .2rem;
+    color: #666;
+}
+
+.book-unit {
+    font-size: .6rem;
+    font-weight: 500;
+    color: #ccc;
+    vertical-align: bottom;
+}
+
+.book-title {
+    font-size: .7rem;
+    color: #aaa;
+}
+
+.book-synopsis-wrap {
+    padding: .5rem 1rem;
+    display: block
+}
+
+.book-text {
+    width: 100%;
+    font-size: .7rem;
+    line-height: normal;
+}
+
+
+/* 按钮 */
+
+.foot-btn-box {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 1px -1px 10px #ccc;
+}
+
+.foot-btn-wrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.foot-btn-item {
+    width: 100%;
+}
+
+.list-btn {
+    padding: .8rem 0;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.list-btn .list-icon {
+    width: .7rem;
+    vertical-align: text-bottom;
+    margin: 0px .1rem;
+}
+
+.read-btn {
+    padding: .8rem 0;
+    text-align: center;
+    font-size: .7rem;
+    background: #d4237a;
+    color: #fff;
+}

@@ -1,27 +1,80 @@
 <view>
-
-    <view>
-
-        <view>
-
-            <view>
-                 <image src="{{}} " ></image>
-            <text> 上一章<text>
-                 </view>
-
-             <view> <image src="{{}} " ></image>
-            <text> 上一张<text> </view>
-
-            <view> <image src="{{}} " ></image>
-            <text> 下一章<text> </view>
-
+    <view class="book-text-wrap">
+        <view class="book-content-box">
+            <!-- 导航 -->
+            <view class="nav-box">
+                <view class="nav-item">
+                    <image src="{{arrowLImg}} " class="icon-img" mode="widthFix"></image>
+                    <text>上一章</text>
+                </view>
+                <view class="nav-item">
+                    <image src="{{menuImg}} " class="icon-menu-img" mode="widthFix"></image>
+                    <text>章节目录</text>
+                </view>
+                <view class="nav-item">
+                    <text>下一章</text>
+                    <image src="{{arrowRImg}} " class="icon-img" mode="widthFix"></image>
+                </view>
+            </view>
+            <!-- 内容 -->
+            <view class="book-text-box">
+                <block wx:for="{{bookText}}" wx:key="">
+                    <text class="book-text">{{item.text}}</text>
+                </block>
+            </view>
+            <!-- 导航 -->
+            <view class="nav-box">
+                <view class="nav-item">
+                    <image src="{{arrowLImg}} " class="icon-img" mode="widthFix"></image>
+                    <text>上一章</text>
+                </view>
+                <view class="nav-item">
+                    <image src="{{menuImg}} " class="icon-menu-img" mode="widthFix"></image>
+                    <text>章节目录</text>
+                </view>
+                <view class="nav-item">
+                    <text>下一章</text>
+                    <image src="{{arrowRImg}} " class="icon-img" mode="widthFix"></image>
+                </view>
+            </view>
+        </view>
+        <view class="menu-btn"></view>
+        <view class="set-up-box ">
+            <view class="menu-nav-box">
+                <view class="menu-nav-item">
+                    <text class="iconfont icon-shejimulu nav-icon"></text>
+                    <text class="nav-text">目录</text>
+                </view>
+                <view class="menu-nav-item">
+                    <text class="iconfont icon-yueliang nav-icon"></text>
+                    <text class="nav-text">夜间</text>
+                </view>
+                <view class="menu-nav-item">
+                    <text class="iconfont icon-ziti nav-icon"></text>
+                    <text class="nav-text">字体</text>
+                </view>
+            </view>
+            <view wx:if="{{fontSizeShow}}" class="slider-box">
+                <view class="slider-nav-box">
+                    <text class="iconfont icon-ziti- slider-icon"></text>
+                    <slider min=".4" max="1" bindchange="listenerSlider" backgroundColor="{{ sliderColor}}" activeColor=" {{activeColor }}" block-size="{{ blockSize}}" class="slider-text" value="0.7" step="0.05" />
+                    <text class="iconfont icon-ziti1 slider-icon"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 目录 -->
+    <view class="">
+        <view class="">
+            <image src="{{bookPic}}" mode="widthFix" />
+            <text>牧神记</text>
         </view>
 
+        <view>
+            <text> </text>
 
 
 
-
+        </view>
     </view>
-
-
 </view>

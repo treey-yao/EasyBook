@@ -1,6 +1,6 @@
 /**app.wxss**/
 
-.pagn {
+page {
     font-size: 24px;
 }
 

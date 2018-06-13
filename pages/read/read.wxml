@@ -64,17 +64,22 @@
         </view>
     </view>
     <!-- 目录 -->
-    <view class="">
-        <view class="">
-            <image src="{{bookPic}}" mode="widthFix" />
-            <text>牧神记</text>
-        </view>
-
-        <view>
-            <text> </text>
-
-
-
+    <view class="catalog-wrap "wx:if="{{ catalogShow}}" >
+        <view class="catalog-mask"></view>
+        <view class="catalog-list-box">
+            <view class="list-box">
+                <view class="book-info-box">
+                    <image src="{{bookPic}}" mode="widthFix" class="book-img" />
+                    <text class="book-name">牧神记</text>
+                </view>
+                <view class="catalog-list-wrap">
+                    <block wx:for="{{bookList}}" wx:key="">
+                        <text class="chapter-item" data-chapterId="{{ item.listId}}">
+                            {{ item.chapterName}}
+                        </text>
+                    </block>
+                </view>
+            </view>
         </view>
     </view>
 </view>

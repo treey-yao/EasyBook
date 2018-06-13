@@ -6,17 +6,15 @@ Page({
         menuImg: "../../assets/images/menu.png",
 
         bookText: null,
+        bookList: null,
 
         fontSizeShow: false,
+        catalogShow: false,
         // 滑块
         sliderColor: "#e9e9e9",
         activeColor: "#d4237a",
         blockSize: 10,
-
         bookPic: 'https://qidian.qpic.cn/qdbimg/349573/1009704712/150',
-
-
-
     },
 
     onLoad: function() {
@@ -38,6 +36,7 @@ Page({
                 if (res.statusCode) {
                     _this.setData({
                         bookText: res.data.data.bookText,
+                        bookList: res.data.data.catalog,
                     })
                 }
             }
@@ -47,11 +46,5 @@ Page({
     listenerSlider: function(e) {
         console.log(e.detail.value)
     }
-
-
-
-
-
-
 
 })
